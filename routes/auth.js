@@ -10,10 +10,6 @@ const JWT_SECRET = process.env.JWT_SECRET;
 const verifyToken = require("../middleware/verifyToken");
 const nodemailer = require("nodemailer");
 
-router.get("/", (req, res) => {
-  res.status(201).send("working..");
-});
-
 
 router.post("/send-otp", verifyToken, async (req, res) => {
   const userId = req.user.id;

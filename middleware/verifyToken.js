@@ -13,7 +13,7 @@ const verifyToken = (req, res, next) => {
     req.user = data.user;
     next();
   } catch (error) {
-    res.status(401).send({ error: "Please authenticate using a valid token" });
+    res.status(401).send({status : false ,error: "Please authenticate using a valid token" });
   }
 };
 
