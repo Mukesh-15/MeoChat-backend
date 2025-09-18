@@ -38,6 +38,6 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(5500, () => {
+server.listen(5000, () => {
   console.log('Server running at http://localhost:5500');
 });
