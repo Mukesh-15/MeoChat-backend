@@ -24,10 +24,6 @@ const UserSchema = new Schema({
         type: Date,
         default: Date.now(),
     },
-    isVerified:{
-        type:Boolean,
-        default:false,
-    },
     profilePic: {
         type: String,
         default: "",
